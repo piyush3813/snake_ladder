@@ -19,10 +19,13 @@ public class SnakeLadder {
         logger.info("Welcome to Snake and Ladder Simulation");
 
         int player = 0;
+        //assigning 0 th position to both the players
         int[] playerPosition = {0, 0};
         Random random = new Random();
         int dieroll;
+        //assigning dieroll count of both the players 0
         int[] dierollcount = {0, 0};
+        //checking both the players simultaneously using arrays 2-D concept
         while (playerPosition[player] < 100) {
             dieroll = random.nextInt(1, 7);
             dierollcount[player]++;
